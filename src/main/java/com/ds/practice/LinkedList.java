@@ -5,8 +5,8 @@ public class LinkedList {
 	Node head;
 	Node prev;
 
-	public Node add(Integer value){
-		if(head == null){
+	public Node add(Integer value) {
+		if (head == null) {
 			head = new Node(value);
 			prev = head;
 
@@ -18,14 +18,14 @@ public class LinkedList {
 		return prev;
 	}
 
-	public Node remove(Integer value){
+	public Node remove(Integer value) {
 		Node head = this.head;
 		Node currnetNode = head;
 		Node prev = null;
-		while (currnetNode != null){
-			if(currnetNode.getValue().intValue() == value){
+		while (currnetNode != null) {
+			if (currnetNode.getValue().intValue() == value) {
 				System.out.println("Removing node " + currnetNode.getValue());
-				if(prev == null){
+				if (prev == null) {
 					return currnetNode.getNextNode();
 				}
 				prev.setNextNode(currnetNode.getNextNode());
@@ -38,18 +38,19 @@ public class LinkedList {
 		return head;
 	}
 
-	public void printList(Node head){
+	public void printList(Node head) {
 		Node currNode = head;
-		while (currNode != null){
+		while (currNode != null) {
 			System.out.print(currNode.getValue() + "-->");
 			currNode = currNode.getNextNode();
 		}
 		System.out.println("");
 	}
+
 	static class ArrayLinkedListBuilder {
 		int[] elements;
 
-		ArrayLinkedListBuilder add(int[] arr){
+		ArrayLinkedListBuilder add(int[] arr) {
 			this.elements = arr;
 			return this;
 		}
@@ -63,12 +64,12 @@ public class LinkedList {
 		}
 	}
 
-	public Node getElementAt(int reqIndex){
+	public Node getElementAt(int reqIndex) {
 		int currentIndex = 1;
 		Node currentNode = head;
 		Node reqNode = null;
-		while (currentNode != null){
-			if(currentIndex == reqIndex){
+		while (currentNode != null) {
+			if (currentIndex == reqIndex) {
 				reqNode = currentNode;
 				break;
 			} else {

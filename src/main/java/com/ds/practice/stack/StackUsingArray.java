@@ -1,28 +1,27 @@
 package com.ds.practice.stack;
 
-
 public class StackUsingArray<T> {
 
 	int currentIndex = -1;
 	int[] stack;
-	int stackSize;
+	int   stackSize;
 
-	public StackUsingArray(int stackSize){
+	public StackUsingArray(int stackSize) {
 		this.stackSize = stackSize;
 		stack = new int[stackSize];
 	}
 
 	int pop() throws Exception {
-		if(currentIndex < 0){
+		if (currentIndex < 0) {
 			throw new Exception("Stack is empty");
 		}
-		int ele =  stack[currentIndex];
+		int ele = stack[currentIndex];
 		currentIndex--;
 		return ele;
 	}
 
 	void push(int v) throws Exception {
-		if(currentIndex < stackSize) {
+		if (currentIndex < stackSize) {
 			stack[++currentIndex] = v;
 		} else {
 			throw new Exception("Stack overflown");
@@ -30,13 +29,13 @@ public class StackUsingArray<T> {
 	}
 
 	void printStack() throws Exception {
-		while (!isStackEmpty()){
+		while (!isStackEmpty()) {
 			System.out.print(pop() + ", ");
 		}
 		System.out.println("");
 	}
 
-	boolean isStackEmpty(){
+	boolean isStackEmpty() {
 		return stack.length == 0;
 	}
 }
