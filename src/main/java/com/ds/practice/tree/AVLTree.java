@@ -24,59 +24,40 @@ public class AVLTree {
 	}
 
 	public static void main(String args[]){
-		int[] input = {0, -1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13};
+		int[] input = {1, 2, 3, 6, 5, -2, -5, -8};
 		AVLTree avlTree = new AVLTree();
 		for (int i=0; i<input.length; i++) {
-			avlTree.insertIntoAVL(avlTree.root, input[i]);
+			avlTree.root = avlTree.insertIntoAVL(avlTree.root, input[i]);
 		}
-
 		avlTree.printInOrder(avlTree.root);
 
 	}
 
 	private Node rotateRight(Node vn) {
-		Node newRoot = vn.right;
-		newRoot.left = vn;
-		newRoot.left.right = null;
+		Node newRoot = vn.left;
+		vn.left = newRoot.right;
+		newRoot.right = vn;
 		return newRoot;
 	}
 
 	private Node rotateLeft(Node vn) {
-		Node newRoot = vn.left;
-        newRoot.right = vn;
-		newRoot.right.left = null;
-        return vn;
-	}
-
-
-	private Node rotateRightLeft(Node vn) {
-		Node tmpVn = vn;
-		vn.right = vn.right.left;
-		vn.right.right = tmpVn.right;
-		vn.right.right.left = null;
-		return rotateRight(vn);
-	}
-
-	private Node rotateLeftRight(Node vn) {
-       Node tmpVn = vn;
-       vn.left = vn.left.right;
-       vn.left.left = tmpVn.left;
-       vn.left.left.right = null;
-       return rotateLeft(vn);
+		Node newRoot = vn.right;
+		vn.right = newRoot.left;
+        newRoot.left = vn;
+        return newRoot;
 	}
 
 	private Node insertIntoAVL(Node node, Integer element){
+
 		if(node == null){
 			node = new Node(element);
-			if(root == null){
-				root = node;
-			}
 			return node;
 		}
-		if(element >= node.value){
+
+		if(element > node.value){
 			node.right = insertIntoAVL(node.right, element);
 		}
-		else {
+		else if(element < node.value) {
 			node.left = insertIntoAVL(node.left, element);
 		}
 
@@ -84,15 +65,17 @@ public class AVLTree {
 
 		if(balanced > 1){
 			if(getHeight(node.left.left) > getHeight(node.left.right)){
-				return rotateLeft(node);
+				return rotateRight(node);
 			} else {
-				node = rotateLeftRight(node);
+				node = rotateRight(node);
+				node = rotateLeft(node);
 			}
 		} else if(balanced < -1){
 			if(getHeight(node.right.right) > getHeight(node.right.left)){
-				return rotateRight(node);
+				return rotateLeft(node);
 			} else {
-				return rotateRightLeft(node);
+				node = rotateLeft(node);
+				node = rotateRight(node);
 			}
 		}
 		return node;
