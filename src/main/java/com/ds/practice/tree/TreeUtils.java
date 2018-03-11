@@ -1,6 +1,6 @@
 package com.ds.practice.tree;
 
-public class TreeTravesor {
+public class TreeUtils {
 
 	public static void printInOrder(Node n) {
 		if (n == null) {
@@ -48,5 +48,17 @@ public class TreeTravesor {
 			}
 		}
 	}
+
+	public static boolean isLeafNode(Node n) {
+		return n.left == null && n.right == null;
+	}
+
+	public static int getNodeCount(Node n, int count) {
+		if (n == null) {
+			return count;
+		}
+		return 1 + getNodeCount(n.left, count) + getNodeCount(n.right, count);
+	}
+
 }
 

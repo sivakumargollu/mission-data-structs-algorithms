@@ -1,31 +1,40 @@
 package com.ds.practice.Heap;
 
 import com.ds.practice.tree.Node;
-import com.ds.practice.tree.TreeTravesor;
+import com.ds.practice.tree.TreeUtils;
 
 import java.util.LinkedList;
 
 /**
  * Build a Maximum (Max) Heap using the Williams method.
+ * Time complexity - O(nk) -> O(n*n) in most cases
+ * Where is N is size of array and K is tree size,
  */
 public class MaxHeap {
 
-	Node root;
+	public Node root;
 
 	public static void main(String[] args) {
-		MaxHeap maxHeap = new MaxHeap();
 		int[] input = new int[] { 3, 1, 6, 5, 2, 4, 10, 30, 100, 101, 99, 1000 };
+		MaxHeap maxHeap = new MaxHeap(input);
+		TreeUtils.printLevelOrderTraversal(maxHeap.root);
+	}
+
+	public MaxHeap() {
+
+	}
+
+	public MaxHeap(int[] input) {
 		for (int i = 0; i < input.length; i++) {
 			int element = input[i];
-			maxHeap.root = maxHeap.insert(maxHeap.root, element);
-			maxHeap.root = maxHeap.heapify(maxHeap.root);
+			this.root = insert(root, element);
+			this.root = heapify(root);
 		}
-
-		TreeTravesor.printLevelOrderTraversal(maxHeap.root);
 	}
 
 	//Insertion rule top -> botton, left -> right,
 	// Hence we are following level order traversal to insert element
+	//Given input length K and Size of tree , Timecomplexity = O(nk)
 	public Node insert(Node node, int value) {
 		if (node == null) {
 			return new Node(value);
@@ -53,7 +62,8 @@ public class MaxHeap {
 	}
 
 	//Heapifying the Tree so that maximum element comes on top
-	Node heapify(Node node) {
+	//Given input length K and size of tree N, Timecomplexity = O(nk)
+	public Node heapify(Node node) {
 
 		if (node == null) {
 			return node;
@@ -81,5 +91,65 @@ public class MaxHeap {
 			}
 		}
 		return node;
+	}
+
+	public Node addValue(int value) {
+		this.root = insert(this.root, value);
+		this.root = heapify(this.root);
+		return this.root;
+	}
+
+	public Node getLeafNode(Node rootNode) {
+		if (rootNode == null) {
+			return rootNode;
+		}
+		TreeUtils.printLevelOrderTraversal(rootNode);
+		LinkedList<Node> que = new LinkedList<>();
+		que.add(rootNode);
+		Node lastNode = null;
+		while (!que.isEmpty()) {
+			Node currentNode = que.poll();
+			if (currentNode.left != null) {
+				que.add(currentNode.left);
+			}
+			if (currentNode.right != null)
+				que.add(currentNode.right);
+			lastNode = currentNode;
+		}
+		System.out.println("\n Returning as leaf : " + lastNode.value);
+		return lastNode;
+	}
+
+	public boolean removeNode(Node root, Node rmNode) {
+		if (rmNode == null) {
+			return true;
+		}
+		System.out.println("Trying to remove " + rmNode.value);
+		LinkedList<Node> que = new LinkedList<>();
+		que.add(root);
+		boolean removed = false;
+		while (!que.isEmpty()) {
+			Node currentNode = que.poll();
+			if (currentNode.left != null) {
+				if (currentNode.left.value.equals(rmNode.value)) {
+					currentNode.left = null;
+					removed = true;
+					break;
+				} else {
+					que.add(currentNode.left);
+				}
+			}
+			if (currentNode.right != null) {
+				if (currentNode.right.value.equals(rmNode.value)) {
+					currentNode.right = null;
+					removed = true;
+					break;
+				} else {
+					que.add(currentNode.right);
+				}
+			}
+		}
+		System.out.println("Removal satus " + removed);
+		return removed;
 	}
 }
