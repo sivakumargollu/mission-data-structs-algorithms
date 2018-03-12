@@ -62,7 +62,7 @@ public class MergeSort {
 			k++;
 		}
 
-		System.out.print("\nAfter merge ::");
+		System.out.print("\n After merge ::");
 		print(sorted);
 		return sorted;
 
