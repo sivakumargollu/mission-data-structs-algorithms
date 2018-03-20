@@ -20,35 +20,27 @@ public class LinkedListMergeSort {
 
 		Node right = mergeSort(nextToMiddle);
 
-		return mergeLinkedList(left, right, null);
+		return mergeLinkedList(left, right);
 
 	}
 
-	public Node mergeLinkedList(Node l, Node r, Node merged){
-		if(l == null && r != null){
-			while (r != null){
-				merged.setNextNode(new Node(r.getValue()));
-				r = r.getNextNode();
-			}
-			return merged;
+	public Node mergeLinkedList(Node l, Node r){
+		Node result = null;
+		if(l == null){
+			return r;
 		}
-
-		if(r == null && l != null){
-			while (l != null){
-				merged.setNextNode(new Node(l.getValue()));
-				l = l.getNextNode();
-			}
-			return merged;
+		if(r == null){
+			return l;
 		}
 
 		if(l.getValue() > r.getValue()){
-			merged = addValue(merged, r.getValue());
-			mergeLinkedList(l, r.getNextNode(), merged);
+			result = r;
+			result.setNextNode(mergeLinkedList(l, r.getNextNode()));
 		} else {
-			merged = addValue(merged, l.getValue());
-			mergeLinkedList(l.getNextNode(), r, merged);
+			result = l;
+			result.setNextNode(mergeLinkedList(l.getNextNode(), r));
 		}
-		return merged;
+		return result;
 	}
 
 	public Node addValue(Node n, Integer value){

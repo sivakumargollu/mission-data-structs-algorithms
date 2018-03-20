@@ -4,6 +4,7 @@ import com.ds.practice.list.single_linked_list.LinkedList;
 import com.ds.practice.list.single_linked_list.LinkedListUtils;
 import com.ds.practice.list.Node;
 import com.ds.practice.list.single_linked_list.LinkedListMergeSort;
+import com.ds.practice.list.single_linked_list.ReverseLinkedByKGroupWise;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -176,7 +177,7 @@ public class LinkedListTest {
 
 	@Test
 	public void testMergeSortInPlace(){
-		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 35, 4, 56, 2, 47, 1, 100, -12}).build();
+		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 4, 56, 35, -12}).build();
 
 		LinkedListMergeSort linkedListMergeSort = new LinkedListMergeSort();
 		Node n = linkedListMergeSort.mergeSort(linkedList.getHead());
@@ -185,6 +186,7 @@ public class LinkedListTest {
 		//Assert.assertEquals(n.getValue().intValue(), -12);
 
 	}
+
 
 
 	@Test
