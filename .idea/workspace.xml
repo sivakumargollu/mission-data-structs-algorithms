@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e79e8432-610c-477f-a4ee-ca61a83ed326" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/MergeSort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java" afterPath="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedListUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedListUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ds/practice/stack/StackUsingList.java" afterPath="$PROJECT_DIR$/src/main/java/com/ds/practice/stack/StackUsingList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,19 +21,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2494">
-              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="103">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#167#168#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,25 +50,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedListUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListUtils.java">
+      <file leaf-file-name="LinkedListUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedListUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="85" column="28" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="28" />
+            <state relative-caret-position="105">
+              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding>
-                <element signature="e#1967#1968#0" expanded="true" />
-                <element signature="e#2027#2028#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2021#2022#0" expanded="true" />
+                <element signature="e#2081#2082#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -70,11 +67,23 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
+                <element signature="e#187#188#0" expanded="true" />
                 <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/MergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,11 +91,21 @@
       <file leaf-file-name="LinkedListTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="133">
+              <caret line="181" column="36" lean-forward="false" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackUsingList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/stack/StackUsingList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,20 +124,10 @@
         </entry>
       </file>
       <file leaf-file-name="ReverseLinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/ReverseLinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/ReverseLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,12 +174,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/tree/BSTreeUsingArrays.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/ReverseLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/stack/StackUsingList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/RemoveDuplicatesSortedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/ReverseLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedListUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/stack/StackUsingList.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/MergeSort.java" />
       </list>
     </option>
   </component>
@@ -526,10 +540,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -554,66 +564,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="practice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mission-data-structs-algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mission-data-structs-algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mission-data-structs-algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mission-data-structs-algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuffixPrefix" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -673,37 +623,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sorting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mission-data-structs-algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mission-data-structs-algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="que" />
+              <option name="myItemId" value="list" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -736,34 +656,8 @@
               <option name="myItemId" value="list" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mission-data-structs-algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mission-data-structs-algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Heap" />
+              <option name="myItemId" value="single_linked_list" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -797,33 +691,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest.testMergeSort2">
-    <configuration default="false" name="LinkedListTest.mergeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ds.practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="DSPractice" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ds.practice" />
-      <option name="MAIN_CLASS_NAME" value="com.ds.practice.LinkedListTest" />
-      <option name="METHOD_NAME" value="mergeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.LinkedListTest.testMergeSortInPlace">
     <configuration default="false" name="LinkedListTest.mergeTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -915,6 +783,32 @@
       <option name="PACKAGE_NAME" value="com.ds.practice" />
       <option name="MAIN_CLASS_NAME" value="com.ds.practice.LinkedListTest" />
       <option name="METHOD_NAME" value="testMergeSort2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="LinkedListTest.testMergeSortInPlace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ds.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="DSPractice" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ds.practice" />
+      <option name="MAIN_CLASS_NAME" value="com.ds.practice.LinkedListTest" />
+      <option name="METHOD_NAME" value="testMergeSortInPlace" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1384,19 +1278,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedListTest.mergeTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LinkedListTest.mergeTest1" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSort" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LinkedListTest.getNodeAtTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSort2" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedListTest.mergeTest1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSort" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedListTest.getNodeAtTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSort2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSortInPlace" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSort2" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSort" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedListTest.getNodeAtTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LinkedListTest.mergeTest1" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedListTest.mergeTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSortInPlace" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSort2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedListTest.testMergeSort" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LinkedListTest.getNodeAtTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedListTest.mergeTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -1417,44 +1311,44 @@
       <updated>1520444871512</updated>
       <workItem from="1520444877166" duration="29476000" />
       <workItem from="1520843721068" duration="7111000" />
-      <workItem from="1521292968482" duration="35346000" />
+      <workItem from="1521292968482" duration="41778000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedListTest_testMergeSort - 2018.03.20 at 13h 41m 00s.xml">
-      <configuration name="LinkedListTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 17h 37m 25s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort - 2018.03.20 at 13h 41m 07s.xml">
-      <configuration name="LinkedListTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 17h 37m 52s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort - 2018.03.20 at 13h 43m 10s.xml">
-      <configuration name="LinkedListTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 17h 39m 53s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort - 2018.03.20 at 13h 43m 17s.xml">
-      <configuration name="LinkedListTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 17h 40m 03s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort - 2018.03.20 at 13h 44m 02s.xml">
-      <configuration name="LinkedListTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 18h 18m 39s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort - 2018.03.20 at 14h 52m 52s.xml">
-      <configuration name="LinkedListTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 18h 18m 50s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort2 - 2018.03.20 at 14h 55m 21s.xml">
-      <configuration name="LinkedListTest.testMergeSort2" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 18h 25m 09s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort2 - 2018.03.20 at 14h 55m 55s.xml">
-      <configuration name="LinkedListTest.testMergeSort2" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 18h 26m 12s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort2 - 2018.03.20 at 14h 56m 22s.xml">
-      <configuration name="LinkedListTest.testMergeSort2" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 18h 27m 17s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest_testMergeSort2 - 2018.03.20 at 14h 56m 42s.xml">
-      <configuration name="LinkedListTest.testMergeSort2" configurationId="JUnit" />
+    <history-entry file="LinkedListTest_testMergeSortInPlace - 2018.03.20 at 18h 27m 30s.xml">
+      <configuration name="LinkedListTest.testMergeSortInPlace" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71933000" />
+    <option name="totallyTimeSpent" value="78365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1472,7 +1366,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1480,7 +1374,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27671233" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27671233" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1588,79 +1482,85 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedList.java</url>
-          <line>174</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java</url>
+          <line>176</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedList.java</url>
-          <line>173</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java</url>
+          <line>175</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedList.java</url>
-          <line>144</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java</url>
+          <line>146</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedList.java</url>
-          <line>147</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java</url>
+          <line>149</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java</url>
-          <line>59</line>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java</url>
-          <line>60</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java</url>
-          <line>111</line>
+          <line>112</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java</url>
-          <line>120</line>
+          <line>121</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListUtils.java</url>
-          <line>82</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedListUtils.java</url>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListUtils.java</url>
-          <line>87</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedListUtils.java</url>
+          <line>89</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java</url>
-          <line>142</line>
+          <line>143</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListUtils.java</url>
-          <line>166</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedListUtils.java</url>
+          <line>168</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/MergeSort.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1803,19 +1703,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1943,16 +1844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/stack/StackUsingList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/stack/StackUsingArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-154">
@@ -2036,11 +1927,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/ReverseLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/ReverseLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/stack/StackUsingList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="181" column="36" lean-forward="false" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2052,59 +1987,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ds/practice/LinkedListTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/LinkedListUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2021#2022#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2494">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
+            <element signature="e#187#188#0" expanded="true" />
             <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/LinkedListUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ds/practice/list/single_linked_list/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="28" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="28" />
-          <folding>
-            <element signature="e#1967#1968#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

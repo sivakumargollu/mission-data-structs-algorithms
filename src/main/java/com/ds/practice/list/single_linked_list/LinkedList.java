@@ -1,6 +1,8 @@
 package com.ds.practice.list.single_linked_list;
 
 
+import com.ds.practice.list.Node;
+
 import java.util.Stack;
 
 public class LinkedList {

@@ -1,7 +1,7 @@
 package com.ds.practice.stack;
 
 import com.ds.practice.list.single_linked_list.LinkedList;
-import com.ds.practice.list.single_linked_list.Node;
+import com.ds.practice.list.Node;
 
 import java.util.Scanner;
 
