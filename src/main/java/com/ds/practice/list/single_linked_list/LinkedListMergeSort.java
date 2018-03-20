@@ -2,7 +2,7 @@ package com.ds.practice.list.single_linked_list;
 
 import com.ds.practice.list.Node;
 
-public class MergeSort {
+public class LinkedListMergeSort {
 
 	public Node mergeSort(Node head) {
 		if(head == null || head.getNextNode() == null){

@@ -3,7 +3,7 @@ package com.ds.practice;
 import com.ds.practice.list.single_linked_list.LinkedList;
 import com.ds.practice.list.single_linked_list.LinkedListUtils;
 import com.ds.practice.list.Node;
-import com.ds.practice.list.single_linked_list.MergeSort;
+import com.ds.practice.list.single_linked_list.LinkedListMergeSort;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -178,8 +178,8 @@ public class LinkedListTest {
 	public void testMergeSortInPlace(){
 		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 35, 4, 56, 2, 47, 1, 100, -12}).build();
 
-		MergeSort mergeSort = new MergeSort();
-		Node n = mergeSort.mergeSort(linkedList.getHead());
+		LinkedListMergeSort linkedListMergeSort = new LinkedListMergeSort();
+		Node n = linkedListMergeSort.mergeSort(linkedList.getHead());
 		linkedList.printList(n);
 		Assert.assertNotNull(n);
 		//Assert.assertEquals(n.getValue().intValue(), -12);
