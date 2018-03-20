@@ -1,8 +1,8 @@
 package com.ds.practice;
 
-import com.ds.practice.list.LinkedList;
-import com.ds.practice.list.LinkedListUtils;
-import com.ds.practice.list.Node;
+import com.ds.practice.list.single_linked_list.LinkedList;
+import com.ds.practice.list.single_linked_list.LinkedListUtils;
+import com.ds.practice.list.single_linked_list.Node;
 import org.junit.Assert;
 import org.junit.Test;
 

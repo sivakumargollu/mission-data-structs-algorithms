@@ -1,4 +1,4 @@
-package com.ds.practice.list;
+package com.ds.practice.list.single_linked_list;
 
 
 public class ReverseLinkedList {
