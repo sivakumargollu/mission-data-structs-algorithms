@@ -1,4 +1,4 @@
-package com.ds.practice;
+package com.ds.practice.list;
 
 public class Node {
 

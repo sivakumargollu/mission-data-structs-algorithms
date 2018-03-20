@@ -1,7 +1,7 @@
 package com.ds.practice.stack;
 
-import com.ds.practice.LinkedList;
-import com.ds.practice.Node;
+import com.ds.practice.list.LinkedList;
+import com.ds.practice.list.Node;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class StackUsingList {
 		stack = new LinkedList();
 	}
 
-	int pop() throws Exception {
+	public int pop() throws Exception {
 		if (stackLength <= 0) {
 			throw new Exception("Stack is empty");
 		}
@@ -26,7 +26,7 @@ public class StackUsingList {
 		return n.getValue();
 	}
 
-	void push(int ele) throws Exception {
+	public void push(int ele) throws Exception {
 		if (stackLength <= stackSize) {
 			if (currentNode == null) {
 				stack.add(ele);
@@ -37,7 +37,7 @@ public class StackUsingList {
 		}
 	}
 
-	Node getNodeAt(int index) throws Exception {
+	public Node getNodeAt(int index) throws Exception {
 		if (index < 0 || index > stackSize) {
 			throw new Exception("Stack is underflow/overlow index");
 		}
