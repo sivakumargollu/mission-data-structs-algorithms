@@ -109,24 +109,50 @@ public class ReverseLinkedByKGroupWise {
 		if(head == null){
 			return head;
 		}
+
 		Integer counter = 1;
 		Node prev = null;
 		Node current = head;
-		Node next;
+		Node next = null;
+
 		while (counter <= k && current != null){
 			next = current.getNextNode();
-			if(prev == null){
-				prev = current;
-				current.setNextNode(null);
-				current = next;
-			} else {
-				current.setNextNode(prev);
-				prev = current;
-				current = next;
-			}
+			current.setNextNode(prev);
+			prev = current;
+			current = next;
 			counter++;
 		}
-		getNodeAt(prev, k).setNextNode(reverseKNodesRecursion(current, k));
+		 head.setNextNode(reverseKNodesRecursion(current, k));
+		return prev;
+	}
+
+	public Node reverseAltKnodes(Node head, Integer k){
+		if(head == null){
+			return head;
+		}
+
+		Integer counter = 1;
+		Integer counter2 = 1;
+		Node prev = null;
+		Node current = head;
+		Node next = null;
+
+		while (counter <= k && current != null){
+			next = current.getNextNode();
+			current.setNextNode(prev);
+			prev = current;
+			current = next;
+			counter++;
+		}
+
+		head.setNextNode(current);
+		current = head.getNextNode();
+		while (counter2 < k && current != null){
+			current = current.getNextNode();
+			counter2++;
+		}
+		if(current != null)
+		  current.setNextNode(reverseAltKnodes(current.getNextNode(), k));
 		return prev;
 	}
 }

@@ -1,6 +1,7 @@
 package com.ds.practice;
 
 import com.ds.practice.list.Node;
+import com.ds.practice.list.single_linked_list.DetectLoopAndDelete;
 import com.ds.practice.list.single_linked_list.LinkedList;
 import com.ds.practice.list.single_linked_list.LinkedListUtils;
 import com.ds.practice.list.single_linked_list.ReverseLinkedByKGroupWise;
@@ -53,11 +54,10 @@ public class ReverseLinkedListByKGroupWiseTest {
 	@Test
 	public void testReverseListGroupWise2(){
 		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 4, 12, 34, 35, 1, 2, 3, 100, 200 }).build();
-
 		ReverseLinkedByKGroupWise kGroupWise = new ReverseLinkedByKGroupWise();
 		Node n = kGroupWise.reverse(linkedList.getHead(), 3);
 		linkedList.printList(n);
-		//Assert.assertNotNull(n);
+		Assert.assertNotNull(n);
 
 	}
 
@@ -83,4 +83,35 @@ public class ReverseLinkedListByKGroupWiseTest {
 
 	}
 
+	@Test
+	public void testReverseRecursion(){
+		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 4, 12, 34, 35, 1, 2, 100, 200 }).build();
+
+		ReverseLinkedByKGroupWise kGroupWise = new ReverseLinkedByKGroupWise();
+		Node n = kGroupWise.reverseKNodesRecursion(linkedList.getHead(), 3);
+		linkedList.printList(n);
+		Assert.assertNotNull(n);
+
+	}
+
+	@Test
+	public void testReverseAltNodes(){
+		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 4, 12, 34, 35, 1, 2, 100, 200, 89, 76, 45, 36, 65 }).build();
+
+		ReverseLinkedByKGroupWise kGroupWise = new ReverseLinkedByKGroupWise();
+		Node n = kGroupWise.reverseAltKnodes(linkedList.getHead(), 2);
+		linkedList.printList(n);
+		Assert.assertNotNull(n);
+	}
+
+	@Test
+	public void testDetectLoopAndRemove() {
+		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 4, 12, 56}).build();
+		Node n = new LinkedListUtils().getNodeAt(linkedList.getHead(), 5);
+		n.setNextNode(linkedList.getHead());
+		DetectLoopAndDelete loopAndDelete = new DetectLoopAndDelete();
+		boolean b = loopAndDelete.detectLoop(linkedList.getHead());
+		Assert.assertTrue(b);
+
+	}
 }
