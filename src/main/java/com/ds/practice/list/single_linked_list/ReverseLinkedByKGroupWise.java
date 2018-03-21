@@ -126,6 +126,14 @@ public class ReverseLinkedByKGroupWise {
 		return prev;
 	}
 
+	/**
+	 *
+	 * @param head
+	 * @param k
+	 * @return
+	 *
+	 * Reverses the list by alternative K nodes
+	 */
 	public Node reverseAltKnodes(Node head, Integer k){
 		if(head == null){
 			return head;
