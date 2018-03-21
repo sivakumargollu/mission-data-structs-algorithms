@@ -1,3 +1,5 @@
+package com.ds.practice;
+
 import com.ds.practice.list.Node;
 import com.ds.practice.list.single_linked_list.LinkedList;
 import com.ds.practice.list.single_linked_list.UnionAndIntersection;
