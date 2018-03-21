@@ -65,7 +65,7 @@ public class ReverseLinkedByKGroupWise {
 	}
 
 	public Node getNodeAt(Node head, Integer k){
-		while (k-- > 1){
+		while (k-- > 1 && head.getNextNode() != null){
 			head = head.getNextNode();
 		}
 		return head;
@@ -103,5 +103,30 @@ public class ReverseLinkedByKGroupWise {
 		}
 		current.setNextNode(null);
 		return newHead;
+	}
+
+	public Node reverseKNodesRecursion(Node head, Integer k){
+		if(head == null){
+			return head;
+		}
+		Integer counter = 1;
+		Node prev = null;
+		Node current = head;
+		Node next;
+		while (counter <= k && current != null){
+			next = current.getNextNode();
+			if(prev == null){
+				prev = current;
+				current.setNextNode(null);
+				current = next;
+			} else {
+				current.setNextNode(prev);
+				prev = current;
+				current = next;
+			}
+			counter++;
+		}
+		getNodeAt(prev, k).setNextNode(reverseKNodesRecursion(current, k));
+		return prev;
 	}
 }

@@ -61,5 +61,26 @@ public class ReverseLinkedListByKGroupWiseTest {
 
 	}
 
+	@Test
+	public void testReverseListGroupWise3(){
+		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 4, 12, 34, 35, 1, 2, 3, 100, 200 }).build();
+
+		ReverseLinkedByKGroupWise kGroupWise = new ReverseLinkedByKGroupWise();
+		Node n = kGroupWise.reverse(linkedList.getHead(), 5);
+		linkedList.printList(n);
+		//Assert.assertNotNull(n);
+
+	}
+
+	@Test
+	public void testReverseGroupWiseRecursion(){
+		LinkedList linkedList = new LinkedList.ArrayLinkedListBuilder().add(new int[] {10, 41, 4, 12, 34, 35, 1, 2, 100, 200, 12 }).build();
+
+		ReverseLinkedByKGroupWise kGroupWise = new ReverseLinkedByKGroupWise();
+		Node n = kGroupWise.reverseKNodesRecursion(linkedList.getHead(), 3);
+		linkedList.printList(n);
+		Assert.assertNotNull(n);
+
+	}
 
 }
