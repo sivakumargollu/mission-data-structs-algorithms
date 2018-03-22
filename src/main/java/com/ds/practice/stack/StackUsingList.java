@@ -22,6 +22,12 @@ public class StackUsingList {
 			throw new Exception("Stack is empty");
 		}
 		Node n = getNodeAt(stackLength);
+		Node nPrev = getNodeAt(stackLength - 1);
+		if(nPrev != null){
+			nPrev.setNextNode(null);
+		} else {
+			stack.setHead(null);
+		}
 		stackLength--;
 		return n.getValue();
 	}
@@ -62,5 +68,9 @@ public class StackUsingList {
 			System.out.print(pop() + ", ");
 			size--;
 		}
+	}
+
+	public boolean isEmpty() {
+		return stackLength == 0;
 	}
 }

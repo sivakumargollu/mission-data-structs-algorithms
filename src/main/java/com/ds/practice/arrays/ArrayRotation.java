@@ -21,18 +21,24 @@ public class ArrayRotation {
 			k = k % arr.length;
 		}
 
-		int[] result = new int[arr.length];
+		int[] tmp = new int[k];
 		Integer counter = 0;
-		while (counter < arr.length){
-			int element = arr[counter];
-			int targetIndex = counter + k;
-			if(targetIndex >= arr.length){
-				targetIndex =  targetIndex % arr.length;
-			}
-			result[targetIndex] = element;
+		int i = 0;
+		for(; i < k ; i++){
+			tmp[i] = arr[i];
+		}
+		i = 0;
+		while (i < arr.length-k){
+			arr[i] = arr[i+k];
+			i++;
+		}
+
+		while (counter < k){
+			arr[i] = tmp[counter];
+			i++;
 			counter++;
 		}
-		return result;
+		return arr;
 	}
 
 	/**
@@ -71,31 +77,5 @@ public class ArrayRotation {
 			 }
 		return input;
 	}
-
-	public int[] rortateKtimes(int[] input, int k) {
-		if(input.length <= 0){
-			return input;
-		}
-
-		if(k > input.length){
-			k = k % input.length;
-		}
-
-		Integer cIPV;
-		Integer tmp;
-
-		for(int index=0; index < input.length; index++){
-			Integer targetIndex = index + k;
-			if(targetIndex > input.length){
-				targetIndex = targetIndex % input.length;
-			}
-			cIPV = input[targetIndex];
-			input[index] = cIPV;
-
-
-		}
-
-	}
-
 
 }
