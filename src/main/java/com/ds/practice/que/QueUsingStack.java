@@ -28,7 +28,6 @@ public class QueUsingStack {
 	}
 
 	public Integer deque() throws Exception {
-		System.out.println("Dequeing ");
 		if(!containerStack.isEmpty()){
 			length--;
 			return  containerStack.pop();
